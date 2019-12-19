@@ -9,29 +9,17 @@
 /* Begin PBXBuildFile section */
 		62E87BD323ABF0DA00461D25 /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = 62E87BD223ABF0DA00461D25 /* AppDelegate.swift */; };
 		62E87BD523ABF0DA00461D25 /* SceneDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = 62E87BD423ABF0DA00461D25 /* SceneDelegate.swift */; };
-		62E87BDA23ABF0DA00461D25 /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 62E87BD823ABF0DA00461D25 /* Main.storyboard */; };
 		62E87BDC23ABF0DC00461D25 /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 62E87BDB23ABF0DC00461D25 /* Assets.xcassets */; };
 		62E87BDF23ABF0DC00461D25 /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 62E87BDD23ABF0DC00461D25 /* LaunchScreen.storyboard */; };
-		62E87BEA23ABF1CB00461D25 /* Weather.swift in Sources */ = {isa = PBXBuildFile; fileRef = 62E87BE923ABF1CB00461D25 /* Weather.swift */; };
-		62E87BEC23ABF1DC00461D25 /* DarkSkyRoute.swift in Sources */ = {isa = PBXBuildFile; fileRef = 62E87BEB23ABF1DC00461D25 /* DarkSkyRoute.swift */; };
-		62E87BF023ABFB2D00461D25 /* DarkSkyService.swift in Sources */ = {isa = PBXBuildFile; fileRef = 62E87BEF23ABFB2D00461D25 /* DarkSkyService.swift */; };
-		62E87BF223ABFB3B00461D25 /* APIController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 62E87BF123ABFB3B00461D25 /* APIController.swift */; };
-		62E87BF623AC20C200461D25 /* CampusWeatherViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 62E87BF523AC20C200461D25 /* CampusWeatherViewController.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
 		62E87BCF23ABF0DA00461D25 /* weatherJournal.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = weatherJournal.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		62E87BD223ABF0DA00461D25 /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
 		62E87BD423ABF0DA00461D25 /* SceneDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SceneDelegate.swift; sourceTree = "<group>"; };
-		62E87BD923ABF0DA00461D25 /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/Main.storyboard; sourceTree = "<group>"; };
 		62E87BDB23ABF0DC00461D25 /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
 		62E87BDE23ABF0DC00461D25 /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/LaunchScreen.storyboard; sourceTree = "<group>"; };
 		62E87BE023ABF0DC00461D25 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
-		62E87BE923ABF1CB00461D25 /* Weather.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Weather.swift; sourceTree = "<group>"; };
-		62E87BEB23ABF1DC00461D25 /* DarkSkyRoute.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = DarkSkyRoute.swift; sourceTree = "<group>"; };
-		62E87BEF23ABFB2D00461D25 /* DarkSkyService.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = DarkSkyService.swift; sourceTree = "<group>"; };
-		62E87BF123ABFB3B00461D25 /* APIController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = APIController.swift; sourceTree = "<group>"; };
-		62E87BF523AC20C200461D25 /* CampusWeatherViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = CampusWeatherViewController.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -64,9 +52,6 @@
 		62E87BD123ABF0DA00461D25 /* weatherJournal */ = {
 			isa = PBXGroup;
 			children = (
-				62E87BEE23ABF1FA00461D25 /* Models */,
-				62E87BED23ABF1E100461D25 /* Controllers */,
-				62E87BE723ABF1A900461D25 /* Views */,
 				62E87BE623ABF19800461D25 /* Resources */,
 			);
 			path = weatherJournal;
@@ -82,65 +67,6 @@
 				62E87BE023ABF0DC00461D25 /* Info.plist */,
 			);
 			path = Resources;
-			sourceTree = "<group>";
-		};
-		62E87BE723ABF1A900461D25 /* Views */ = {
-			isa = PBXGroup;
-			children = (
-				62E87BE823ABF1B400461D25 /* Storyboards */,
-			);
-			path = Views;
-			sourceTree = "<group>";
-		};
-		62E87BE823ABF1B400461D25 /* Storyboards */ = {
-			isa = PBXGroup;
-			children = (
-				62E87BD823ABF0DA00461D25 /* Main.storyboard */,
-			);
-			path = Storyboards;
-			sourceTree = "<group>";
-		};
-		62E87BED23ABF1E100461D25 /* Controllers */ = {
-			isa = PBXGroup;
-			children = (
-				62E87BF723AC20CE00461D25 /* ViewControllers */,
-				62E87BF323AC204E00461D25 /* ModelControllers */,
-				62E87BF423AC208000461D25 /* Helpers+Extensions */,
-			);
-			path = Controllers;
-			sourceTree = "<group>";
-		};
-		62E87BEE23ABF1FA00461D25 /* Models */ = {
-			isa = PBXGroup;
-			children = (
-				62E87BE923ABF1CB00461D25 /* Weather.swift */,
-			);
-			path = Models;
-			sourceTree = "<group>";
-		};
-		62E87BF323AC204E00461D25 /* ModelControllers */ = {
-			isa = PBXGroup;
-			children = (
-				62E87BEB23ABF1DC00461D25 /* DarkSkyRoute.swift */,
-				62E87BEF23ABFB2D00461D25 /* DarkSkyService.swift */,
-			);
-			path = ModelControllers;
-			sourceTree = "<group>";
-		};
-		62E87BF423AC208000461D25 /* Helpers+Extensions */ = {
-			isa = PBXGroup;
-			children = (
-				62E87BF123ABFB3B00461D25 /* APIController.swift */,
-			);
-			path = "Helpers+Extensions";
-			sourceTree = "<group>";
-		};
-		62E87BF723AC20CE00461D25 /* ViewControllers */ = {
-			isa = PBXGroup;
-			children = (
-				62E87BF523AC20C200461D25 /* CampusWeatherViewController.swift */,
-			);
-			path = ViewControllers;
 			sourceTree = "<group>";
 		};
 /* End PBXGroup section */
@@ -203,7 +129,6 @@
 			files = (
 				62E87BDF23ABF0DC00461D25 /* LaunchScreen.storyboard in Resources */,
 				62E87BDC23ABF0DC00461D25 /* Assets.xcassets in Resources */,
-				62E87BDA23ABF0DA00461D25 /* Main.storyboard in Resources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -215,11 +140,6 @@
 			buildActionMask = 2147483647;
 			files = (
 				62E87BD323ABF0DA00461D25 /* AppDelegate.swift in Sources */,
-				62E87BEC23ABF1DC00461D25 /* DarkSkyRoute.swift in Sources */,
-				62E87BF223ABFB3B00461D25 /* APIController.swift in Sources */,
-				62E87BF623AC20C200461D25 /* CampusWeatherViewController.swift in Sources */,
-				62E87BEA23ABF1CB00461D25 /* Weather.swift in Sources */,
-				62E87BF023ABFB2D00461D25 /* DarkSkyService.swift in Sources */,
 				62E87BD523ABF0DA00461D25 /* SceneDelegate.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
@@ -227,14 +147,6 @@
 /* End PBXSourcesBuildPhase section */
 
 /* Begin PBXVariantGroup section */
-		62E87BD823ABF0DA00461D25 /* Main.storyboard */ = {
-			isa = PBXVariantGroup;
-			children = (
-				62E87BD923ABF0DA00461D25 /* Base */,
-			);
-			name = Main.storyboard;
-			sourceTree = "<group>";
-		};
 		62E87BDD23ABF0DC00461D25 /* LaunchScreen.storyboard */ = {
 			isa = PBXVariantGroup;
 			children = (
