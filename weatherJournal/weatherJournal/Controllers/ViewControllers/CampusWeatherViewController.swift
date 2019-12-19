@@ -25,6 +25,7 @@ class CampusWeatherViewController: UIViewController {
         switch campusSegmentedControl.selectedSegmentIndex {
         case 0:
             lehiCampusFetch()
+            lehiJobsFetch()
         case 1:
             dallasCampusFetch()
         case 2:
@@ -41,6 +42,17 @@ class CampusWeatherViewController: UIViewController {
                 print("Success for lehi")
             case .failure(let error):
                 print(error)
+            }
+        }
+    }
+    
+    func lehiJobsFetch() {
+        GithubJobsService.fetchJobs(for: GithubJobsRoute.lehi) { (result) in
+            switch result {
+            case .success(let listings):
+                print("Success for lehi jobs")
+            case .failure(let error):
+                print(error.localizedDescription)
             }
         }
     }

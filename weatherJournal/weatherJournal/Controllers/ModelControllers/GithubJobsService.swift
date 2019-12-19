@@ -1,5 +1,5 @@
 //
-//  DarkSkyService.swift
+//  GithubJobsService.swift
 //  weatherJournal
 //
 //  Created by RYAN GREENBURG on 12/19/19.
@@ -8,27 +8,25 @@
 
 import Foundation
 
-struct DarkSkyService {
+struct GithubJobsService {
     
-    enum DarkSkyError: Error {
+    enum GithubJobsError: Error {
         case invalidURL
         case unableToDecodeData(Error)
     }
     
-    static func fetchWeatherInfo(for route: DarkSkyRoute, completion: @escaping (Result<Weather, DarkSkyError>) -> Void) {
-        
+    static func fetchJobs(for route: GithubJobsRoute, completion: @escaping (Result<[JobListing], GithubJobsError>) -> Void) {
         guard let url = route.finalURL else {
             completion(.failure(.invalidURL))
             return
         }
         
         APIController.fetchData(for: url) { (result) in
-            
             do {
                 let foundData = try result.get()
                 let decoder = JSONDecoder()
-                let weather = try decoder.decode(Weather.self, from: foundData)
-                completion(.success(weather))
+                let listings = try decoder.decode([JobListing].self, from: foundData)
+                completion(.success(listings))
             } catch {
                 print("Error in \(#function) : \(error.localizedDescription) \n---\n \(error)")
                 completion(.failure(.unableToDecodeData(error)))
